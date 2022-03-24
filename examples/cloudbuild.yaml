@@ -1,0 +1,9 @@
+steps:
+  - name: 'gcr.io/$PROJECT_ID/sonar-scanner:latest'
+    args:
+    - '-Dsonar.host.url=https://sonarcloud.io'
+    - '-Dsonar.login=yasodhap-springml@github'
+    - '-Dsonar.projectKey=363cf5cdbd30070c9e2a342e7a8ac1780d7a77f9'
+    - '-Dsonar.organization=yasodhap-springml'
+    - '-Dsonar.sources=.'
+tags: ['cloud-builders-community']
